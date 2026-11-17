@@ -96,7 +96,7 @@ def login():
         if user is None:
             error = "Incorrect username."
         elif not check_password_hash(user["password"], password):
-            error = "Incorrect password."
+            error = "Wrong password."
 
         if error is None:
             # store the user id in a new session and return to the index
